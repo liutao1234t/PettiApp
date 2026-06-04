@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Petti Privacy Policy</title>
+<style>
+:root{
+  --bg:#050611;
+  --panel:rgba(20,21,32,.62);
+  --panel2:rgba(29,30,44,.72);
+  --text:#f8f8fb;
+  --muted:#a5a8b8;
+  --line:rgba(255,255,255,.12);
+  --violet:#8b5cf6;
+  --cyan:#06b6d4;
+  --pink:#ff4fa3;
+  --orange:#ff8a4c;
+}
+*{box-sizing:border-box}
+html,body{min-height:100%}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--text);
+  line-height:1.72;
+  background:
+    radial-gradient(ellipse at 22% -4%, rgba(255,138,76,.75) 0%, rgba(255,79,163,.38) 20%, transparent 43%),
+    radial-gradient(ellipse at 82% 0%, rgba(6,182,212,.72) 0%, rgba(139,92,246,.28) 24%, transparent 48%),
+    radial-gradient(ellipse at 50% 102%, rgba(255,79,163,.55) 0%, rgba(139,92,246,.40) 18%, rgba(6,182,212,.32) 32%, transparent 58%),
+    linear-gradient(180deg,#060711 0%, #090a17 45%, #060611 100%);
+  overflow-x:hidden;
+}
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 50% 22%, rgba(255,255,255,.16), transparent 25%),
+    linear-gradient(180deg, rgba(255,255,255,.06), transparent 22%),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.025) 0 1px, transparent 1px 82px);
+  mix-blend-mode:screen;
+  opacity:.78;
+}
+body:after{
+  content:"";
+  position:fixed;
+  right:-110px;
+  top:110px;
+  width:560px;
+  height:560px;
+  pointer-events:none;
+  border-radius:34%;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.22), transparent 28%),
+    repeating-linear-gradient(0deg, rgba(255,255,255,.20) 0 1px, transparent 1px 8px),
+    repeating-linear-gradient(90deg, rgba(6,182,212,.18) 0 1px, transparent 1px 10px);
+  transform:rotate(32deg) skew(-8deg);
+  opacity:.20;
+  mask-image:radial-gradient(circle, black 0 45%, transparent 73%);
+}
+.container{position:relative;z-index:1;max-width:1120px;margin:0 auto;padding:54px 18px 86px}
+.container:before{content:"";position:absolute;left:50%;top:84px;width:1px;height:120px;background:linear-gradient(180deg, transparent, rgba(255,255,255,.42), transparent);opacity:.5}
+.container:after{content:"✦";position:absolute;left:50%;top:210px;transform:translateX(-50%);color:#fff;font-size:20px;text-shadow:0 0 28px rgba(255,255,255,.9);opacity:.85}
+.card{
+  position:relative;
+  background:linear-gradient(180deg,rgba(255,255,255,.085),rgba(255,255,255,.025)),linear-gradient(135deg,rgba(255,79,163,.08),rgba(6,182,212,.04) 48%,rgba(255,138,76,.07));
+  border:1px solid var(--line);
+  border-radius:28px;
+  padding:32px;
+  margin-bottom:22px;
+  box-shadow:0 28px 90px rgba(0,0,0,.48),inset 0 1px 0 rgba(255,255,255,.13);
+  backdrop-filter:blur(22px) saturate(1.35);
+  -webkit-backdrop-filter:blur(22px) saturate(1.35);
+  overflow:hidden;
+}
+.card:first-child{min-height:260px;display:flex;flex-direction:column;justify-content:center;text-align:center;border-radius:34px}
+.card:first-child:before{content:"";position:absolute;inset:-1px;background:radial-gradient(circle at 20% 15%,rgba(255,138,76,.25),transparent 32%),radial-gradient(circle at 85% 15%,rgba(6,182,212,.25),transparent 34%),linear-gradient(180deg,rgba(255,255,255,.08),transparent 58%);pointer-events:none}
+.card:not(:first-child):before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(255,255,255,.10),transparent 22%,rgba(255,255,255,.035) 70%,transparent);pointer-events:none}
+.card:nth-child(4n+2){transform:translateX(-6px)}
+.card:nth-child(4n+3){transform:translateX(6px)}
+.card>*{position:relative;z-index:1}
+.badge{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;width:max-content;margin:0 auto;padding:7px 14px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);color:#dce7ff;font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+}
+.badge:before{content:"";width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,var(--cyan),var(--pink));box-shadow:0 0 22px rgba(6,182,212,.95)}
+h1{max-width:900px;margin:18px auto 12px;font-size:clamp(30px,9vw,46px);line-height:.88;letter-spacing:-.075em;color:#fff;text-wrap:balance}
+h2{margin:2px 0 14px;font-size:clamp(20px,6vw,26px);line-height:1;letter-spacing:-.05em;color:#fff}
+h3{margin:20px 0 8px;color:#fff;font-size:18px}
+p,li{color:#e9ecf7;font-size:15.5px}
+.card:first-child p{max-width:760px;margin-left:auto;margin-right:auto;color:#d9ddec}
+.meta{color:var(--muted);font-size:13px;letter-spacing:.02em}
+ul{padding-left:22px;margin:10px 0 0}
+li{margin:8px 0}
+.note{max-width:800px;margin:20px auto 0;padding:16px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.07);color:#f6f7fb;box-shadow:inset 0 1px 0 rgba(255,255,255,.1)}
+a{color:#7dd3fc}
+@media(max-width:680px){
+  .container{padding:32px 12px 56px}
+  .card{padding:18px;border-radius:20px}
+  .card:first-child{min-height:260px;border-radius:26px}
+  h1{font-size:clamp(28px,9vw,42px)}
+  h2{font-size:22px}
+  p,li{font-size:14.5px;}
+  .note{border-radius:18px}
+  .card:nth-child(4n+2),.card:nth-child(4n+3){transform:none}
+}
+</style>
+</head><body><div class="container">
+<div class="card"><div class="badge">Petti Privacy</div><h1>Privacy Policy</h1><div class="meta">Last updated: June 4, 2026 · Contact: <a href="mailto:support@petti.online">support@petti.online</a></div>
+<p>This Privacy Policy explains how Petti collects, uses, stores, shares, and protects information when you use our face painting inspiration, community artwork, AI face paint synthesis, consumable purchase, and related services.</p>
+<div class="note">Petti uses internally managed AI models for artistic face paint synthesis. We do not collect facial biometric templates and do not use uploaded photos for identity recognition.</div></div>
+
+<div class="card"><h2>1. Information We Collect</h2>
+<h3>1.1 Information you provide directly</h3>
+<ul>
+<li><strong>Account information:</strong> username, email address, profile photo, bio, age or date of birth, creative preferences, saved styles, and other information you choose to provide.</li>
+<li><strong>Uploaded content:</strong> photos, face painting references, AI generation inputs, generated artworks, captions, comments, reports, feedback, and other materials you submit.</li>
+<li><strong>AI generation information:</strong> selected face paint styles, prompts, uploaded photo references, generation settings, output history, feedback, and non-sensitive interaction signals used to provide and improve AI features.</li>
+<li><strong>Support and safety information:</strong> messages sent to support, report reasons, screenshots, moderation appeals, and information needed to investigate safety issues.</li>
+<li><strong>Purchase information:</strong> consumable product identifiers, transaction identifiers, purchase status, receipt validation data, delivery status, and purchase-related support records. We generally do not receive your full payment card number from Apple.</li>
+</ul>
+<h3>1.2 Information collected automatically</h3>
+<ul>
+<li>Device model, operating system, app version, language, time zone, IP address, network information, crash logs, diagnostics, and device identifiers where permitted.</li>
+<li>Usage data such as pages viewed, styles browsed, AI generation activity, saved content, comments, likes, reports, purchase interactions, and general engagement events.</li>
+<li>Security and fraud data such as login records, abuse signals, moderation history, spam detection signals, purchase risk signals, and logs used to detect unsafe activity.</li>
+</ul>
+<h3>1.3 Device permissions</h3>
+<p>We may request access to camera and photos so you can upload images for face paint synthesis or community sharing. We may request notifications to send account, generation, activity, safety, or purchase-related notices. You can change permissions in your device settings at any time.</p></div>
+
+<div class="card"><h2>2. AI Model and Face Photo Processing</h2>
+<h3>2.1 Internally trained AI model</h3>
+<p>Petti uses internally managed AI models trained and optimized for artistic face painting and creative makeup synthesis. Our AI system is designed to apply decorative patterns, masks, colors, symbols, and artistic elements onto user-provided images.</p>
+<p>The model is trained and managed around face painting design scenarios, not identity recognition. It focuses on creative image transformation, pattern placement, color blending, and visual style generation.</p>
+<h3>2.2 No biometric collection</h3>
+<p>Petti does not use uploaded face photos for identity verification, biometric identification, facial authentication, surveillance, law enforcement profiling, or sensitive attribute inference. We do not create or store faceprints, biometric templates, or identity databases from uploaded photos.</p>
+<h3>2.3 Limited use of uploaded photos</h3>
+<p>Uploaded photos are processed only to provide the user-requested face paint synthesis, display generated results, support content moderation, maintain platform security, troubleshoot service errors, prevent misuse, and operate the Service.</p>
+<p>We do not design the Service to identify who appears in a photo. We do not sell face photos or use them for unrelated advertising targeting.</p>
+<h3>2.4 Data protection</h3>
+<p>We apply reasonable technical and organizational safeguards to protect uploaded photos and AI-related records. Access to data is limited to what is reasonably necessary for service operation, safety, support, compliance, and system maintenance.</p></div>
+
+<div class="card"><h2>3. How We Use Information</h2>
+<ul>
+<li><strong>To provide the Service:</strong> create accounts, display profiles, enable uploads, generate AI face paint results, maintain saved content, process consumable purchases, and provide support.</li>
+<li><strong>To operate AI features:</strong> process photos, prompts, selected styles, generation settings, feedback, and safety signals to create face paint outputs and improve reliability.</li>
+<li><strong>To personalize content:</strong> recommend face paint styles, official inspiration, artwork posts, themes, and creative collections based on interactions and preferences.</li>
+<li><strong>To maintain safety:</strong> detect harmful content, harassment, impersonation, copyright violations, privacy violations, AI misuse, fraud, spam, and unauthorized access.</li>
+<li><strong>To process consumable purchases:</strong> validate receipts, deliver digital items, maintain entitlement records, prevent purchase fraud, and respond to purchase issues.</li>
+<li><strong>To improve the Service:</strong> analyze usage, debug errors, measure performance, test features, improve image quality, and develop new tools.</li>
+<li><strong>To comply with law:</strong> respond to lawful requests, enforce Terms, resolve disputes, protect rights, and satisfy tax, accounting, consumer protection, or platform obligations.</li>
+</ul></div>
+
+<div class="card"><h2>4. How We Share Information</h2>
+<p>We may share information with service providers that help us operate the Service, including hosting, cloud storage, analytics, customer support, crash reporting, payment verification, content moderation, security, fraud prevention, and infrastructure providers.</p>
+<p>We may share information with app stores or payment platforms to verify purchases, deliver consumable items, resolve purchase issues, and prevent fraud.</p>
+<p>We may disclose information when required by law, regulation, court order, lawful government request, or when necessary to protect the rights, safety, and security of users, Petti, or the public.</p>
+<p>We do not sell personal information in the ordinary sense. If applicable law defines certain disclosures as a “sale” or “sharing,” we will provide rights and choices required by that law.</p></div>
+
+<div class="card"><h2>5. Consumable Purchase Data</h2>
+<p>Petti may offer consumable digital items. We may receive purchase-related information such as product identifier, transaction identifier, purchase status, receipt validation data, country, delivery status, and refund or support records.</p>
+<p>Consumable purchases are not auto-renewable subscriptions and do not automatically renew. Purchase data is used to deliver items, prevent fraud, maintain records, handle support, and comply with legal or accounting requirements.</p></div>
+
+<div class="card"><h2>6. Data Retention</h2>
+<p>We retain information only for as long as reasonably necessary for the purposes described in this Privacy Policy unless a longer period is required or permitted by law.</p>
+<p>If you delete your account, we will take steps to delete or anonymize personal information, subject to reasonable delays and exceptions. We may retain limited information to comply with legal obligations, resolve disputes, enforce agreements, prevent fraud, preserve moderation records, protect users, or maintain security.</p>
+<p>Some content you shared publicly or with other users may remain visible to them unless removed by the Service or required by law. Backup copies may persist for a limited time before being overwritten or deleted.</p></div>
+
+<div class="card"><h2>7. Your Rights and Choices</h2>
+<p>Depending on your location, you may have rights to access, correct, delete, restrict, object to processing, withdraw consent, or request portability of certain personal information.</p>
+<ul>
+<li>You may update certain profile information in the app.</li>
+<li>You may request account deletion through in-app tools where available or by contacting <a href="mailto:support@petti.online">support@petti.online</a>.</li>
+<li>You may revoke camera, photo, notification, or other device permissions through device settings.</li>
+<li>You may opt out of promotional emails where applicable, although we may still send service, security, purchase, account, and policy messages.</li>
+</ul>
+<p>For security, we may need to verify your identity before processing certain requests.</p></div>
+
+<div class="card"><h2>8. Security</h2>
+<p>We use reasonable administrative, technical, and organizational measures designed to protect information against unauthorized access, loss, misuse, alteration, and disclosure. These measures may include access controls, encryption in transit where appropriate, monitoring, internal policies, and security reviews.</p>
+<p>No internet or mobile service can be guaranteed to be completely secure. You are responsible for keeping your account credentials confidential and using strong device security practices.</p></div>
+
+<div class="card"><h2>9. International Transfers</h2>
+<p>Your information may be processed and stored in countries other than where you live. Where required, we use appropriate safeguards for international transfers, such as contractual protections, technical safeguards, and organizational controls.</p></div>
+
+<div class="card"><h2>10. Children’s Privacy</h2>
+<p>The Service is intended for users who are at least 18 years old. We do not knowingly collect personal information from children under 18. If we learn that we collected such information, we will take appropriate steps to delete it or handle it as required by law.</p></div>
+
+<div class="card"><h2>11. Changes and Contact</h2>
+<p>We may update this Privacy Policy from time to time. When we update it, we will revise the “Last updated” date and may provide additional notice if changes are material.</p>
+<p>If you have questions about this Privacy Policy, AI model use, face photo processing, data deletion, or privacy rights, contact us at <a href="mailto:support@petti.online">support@petti.online</a>.</p></div>
+</div></body></html>

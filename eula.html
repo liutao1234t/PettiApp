@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Petti Community Guidelines & EULA</title>
+<style>
+:root{
+  --bg:#050611;
+  --panel:rgba(20,21,32,.62);
+  --panel2:rgba(29,30,44,.72);
+  --text:#f8f8fb;
+  --muted:#a5a8b8;
+  --line:rgba(255,255,255,.12);
+  --violet:#8b5cf6;
+  --cyan:#06b6d4;
+  --pink:#ff4fa3;
+  --orange:#ff8a4c;
+}
+*{box-sizing:border-box}
+html,body{min-height:100%}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--text);
+  line-height:1.72;
+  background:
+    radial-gradient(ellipse at 22% -4%, rgba(255,138,76,.75) 0%, rgba(255,79,163,.38) 20%, transparent 43%),
+    radial-gradient(ellipse at 82% 0%, rgba(6,182,212,.72) 0%, rgba(139,92,246,.28) 24%, transparent 48%),
+    radial-gradient(ellipse at 50% 102%, rgba(255,79,163,.55) 0%, rgba(139,92,246,.40) 18%, rgba(6,182,212,.32) 32%, transparent 58%),
+    linear-gradient(180deg,#060711 0%, #090a17 45%, #060611 100%);
+  overflow-x:hidden;
+}
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 50% 22%, rgba(255,255,255,.16), transparent 25%),
+    linear-gradient(180deg, rgba(255,255,255,.06), transparent 22%),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.025) 0 1px, transparent 1px 82px);
+  mix-blend-mode:screen;
+  opacity:.78;
+}
+body:after{
+  content:"";
+  position:fixed;
+  right:-110px;
+  top:110px;
+  width:560px;
+  height:560px;
+  pointer-events:none;
+  border-radius:34%;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.22), transparent 28%),
+    repeating-linear-gradient(0deg, rgba(255,255,255,.20) 0 1px, transparent 1px 8px),
+    repeating-linear-gradient(90deg, rgba(6,182,212,.18) 0 1px, transparent 1px 10px);
+  transform:rotate(32deg) skew(-8deg);
+  opacity:.20;
+  mask-image:radial-gradient(circle, black 0 45%, transparent 73%);
+}
+.container{position:relative;z-index:1;max-width:1120px;margin:0 auto;padding:54px 18px 86px}
+.container:before{content:"";position:absolute;left:50%;top:84px;width:1px;height:120px;background:linear-gradient(180deg, transparent, rgba(255,255,255,.42), transparent);opacity:.5}
+.container:after{content:"✦";position:absolute;left:50%;top:210px;transform:translateX(-50%);color:#fff;font-size:20px;text-shadow:0 0 28px rgba(255,255,255,.9);opacity:.85}
+.card{
+  position:relative;
+  background:linear-gradient(180deg,rgba(255,255,255,.085),rgba(255,255,255,.025)),linear-gradient(135deg,rgba(255,79,163,.08),rgba(6,182,212,.04) 48%,rgba(255,138,76,.07));
+  border:1px solid var(--line);
+  border-radius:28px;
+  padding:32px;
+  margin-bottom:22px;
+  box-shadow:0 28px 90px rgba(0,0,0,.48),inset 0 1px 0 rgba(255,255,255,.13);
+  backdrop-filter:blur(22px) saturate(1.35);
+  -webkit-backdrop-filter:blur(22px) saturate(1.35);
+  overflow:hidden;
+}
+.card:first-child{min-height:260px;display:flex;flex-direction:column;justify-content:center;text-align:center;border-radius:34px}
+.card:first-child:before{content:"";position:absolute;inset:-1px;background:radial-gradient(circle at 20% 15%,rgba(255,138,76,.25),transparent 32%),radial-gradient(circle at 85% 15%,rgba(6,182,212,.25),transparent 34%),linear-gradient(180deg,rgba(255,255,255,.08),transparent 58%);pointer-events:none}
+.card:not(:first-child):before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(255,255,255,.10),transparent 22%,rgba(255,255,255,.035) 70%,transparent);pointer-events:none}
+.card:nth-child(4n+2){transform:translateX(-6px)}
+.card:nth-child(4n+3){transform:translateX(6px)}
+.card>*{position:relative;z-index:1}
+.badge{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;width:max-content;margin:0 auto;padding:7px 14px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);color:#dce7ff;font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+}
+.badge:before{content:"";width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,var(--cyan),var(--pink));box-shadow:0 0 22px rgba(6,182,212,.95)}
+h1{max-width:900px;margin:18px auto 12px;font-size:clamp(30px,9vw,46px);line-height:.88;letter-spacing:-.075em;color:#fff;text-wrap:balance}
+h2{margin:2px 0 14px;font-size:clamp(20px,6vw,26px);line-height:1;letter-spacing:-.05em;color:#fff}
+h3{margin:20px 0 8px;color:#fff;font-size:18px}
+p,li{color:#e9ecf7;font-size:15.5px}
+.card:first-child p{max-width:760px;margin-left:auto;margin-right:auto;color:#d9ddec}
+.meta{color:var(--muted);font-size:13px;letter-spacing:.02em}
+ul{padding-left:22px;margin:10px 0 0}
+li{margin:8px 0}
+.note{max-width:800px;margin:20px auto 0;padding:16px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.07);color:#f6f7fb;box-shadow:inset 0 1px 0 rgba(255,255,255,.1)}
+a{color:#7dd3fc}
+@media(max-width:680px){
+  .container{padding:32px 12px 56px}
+  .card{padding:18px;border-radius:20px}
+  .card:first-child{min-height:260px;border-radius:26px}
+  h1{font-size:clamp(28px,9vw,42px)}
+  h2{font-size:22px}
+  p,li{font-size:14.5px;}
+  .note{border-radius:18px}
+  .card:nth-child(4n+2),.card:nth-child(4n+3){transform:none}
+}
+</style>
+</head><body><div class="container">
+<div class="card"><div class="badge">Petti Community</div><h1>Community Guidelines & EULA</h1><div class="meta">Last updated: June 4, 2026 · Contact: <a href="mailto:support@petti.online">support@petti.online</a></div>
+<p>Petti is a creative face painting community where users can explore official designs, share artwork, and generate AI-assisted face paint visuals.</p>
+<div class="note">These guidelines apply to all uploads, AI generations, comments, messages, profiles, reports, and community interactions on Petti.</div></div>
+
+<div class="card"><h2>1. Community Purpose</h2>
+<p>Petti is intended to support creative expression, festival inspiration, cosplay ideas, theatrical makeup, artistic face painting, cultural celebration, and respectful visual experimentation.</p>
+<p>Users must follow these Community Guidelines in addition to Petti’s Terms of Service and Privacy Policy.</p></div>
+
+<div class="card"><h2>2. Respectful Conduct</h2>
+<p>Users must treat others respectfully. Harassment, bullying, threats, intimidation, humiliation, stalking, hateful conduct, targeted abuse, or malicious false reporting are prohibited.</p>
+<p>Users may not attack or degrade individuals or groups based on race, ethnicity, nationality, religion, sex, gender, gender identity, sexual orientation, disability, medical condition, age, immigration status, veteran status, or similar protected characteristics.</p></div>
+
+<div class="card"><h2>3. Face Photo Consent</h2>
+<p>Do not upload another person’s face photo without permission. This applies to friends, strangers, public figures, minors, customers, clients, models, and people appearing in group photos.</p>
+<p>You are responsible for ensuring that you have the right to upload and transform any image you submit to Petti. Content that violates privacy expectations may be removed.</p></div>
+
+<div class="card"><h2>4. AI Content Rules</h2>
+<p>AI-generated content must follow all community rules. Users may not use AI features to create abusive, hateful, sexual, violent, deceptive, impersonating, illegal, or privacy-invasive content.</p>
+<p>Users may not attempt to bypass safety filters, manipulate the AI system, generate harmful outputs, or use AI-generated images to mislead others about identity, consent, affiliation, or real-world events.</p></div>
+
+<div class="card"><h2>5. Prohibited Content</h2>
+<ul>
+<li>Illegal, harmful, violent, threatening, or exploitative content.</li>
+<li>Hate speech, harassment, bullying, or targeted abuse.</li>
+<li>Sexually explicit, pornographic, exploitative, or non-consensual intimate content.</li>
+<li>Graphic gore, extreme violence, or shock content.</li>
+<li>Scams, phishing, impersonation, misleading promotions, or fake identities.</li>
+<li>Content that exposes another person’s private information.</li>
+<li>Copyright-infringing artwork, images, logos, or designs.</li>
+</ul></div>
+
+<div class="card"><h2>6. Artistic and Cultural Respect</h2>
+<p>Petti supports creative face painting, but users should be respectful when using designs inspired by cultures, ceremonies, symbols, communities, or traditions. Content that mocks, degrades, or targets protected groups may be removed.</p>
+<p>Users should avoid presenting sensitive cultural, religious, or ceremonial designs in misleading or disrespectful ways.</p></div>
+
+<div class="card"><h2>7. Intellectual Property</h2>
+<p>Users should only upload photos, patterns, designs, logos, artwork, references, or creative materials that they own or are authorized to use.</p>
+<p>Unauthorized use of copyrighted artwork, celebrity images, brand logos, third-party photography, or copied face paint designs may result in removal or account enforcement.</p></div>
+
+<div class="card"><h2>8. Safety and Cosmetic Disclaimer</h2>
+<p>Petti content is for digital visualization and inspiration. AI-generated designs do not guarantee real-world cosmetic safety or suitability.</p>
+<p>Users should evaluate skin sensitivity, allergies, eye-area safety, product ingredients, and hygiene before applying any real face paint or makeup. Petti does not provide medical or dermatological advice.</p></div>
+
+<div class="card"><h2>9. Consumable Purchases</h2>
+<p>Consumable digital items must be used honestly and in accordance with platform rules. Users may not exploit purchase systems, manipulate delivery, use unauthorized refunds, or use purchased items to harass or pressure others.</p></div>
+
+<div class="card"><h2>10. Reporting and Moderation</h2>
+<p>Users are encouraged to report harmful content, AI misuse, privacy violations, copyright infringement, impersonation, harassment, scams, or unsafe behavior.</p>
+<p>Petti may review reports using automated tools, manual review, user reports, safety signals, and platform integrity systems.</p></div>
+
+<div class="card"><h2>11. Enforcement</h2>
+<p>Petti may take enforcement action at its discretion, including warnings, content removal, reduced visibility, generation restrictions, purchase restrictions, account suspension, permanent account termination, or preservation of records for safety and legal purposes.</p>
+<p>Severity, repetition, harm level, legal obligations, and App Store compliance requirements may affect enforcement decisions.</p></div>
+
+<div class="card"><h2>12. Contact</h2>
+<p>Questions about these guidelines may be sent to <a href="mailto:support@petti.online">support@petti.online</a>.</p></div>
+</div></body></html>
