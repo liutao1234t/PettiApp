@@ -1,0 +1,215 @@
+{
+  "appCore": {
+    "appName": "PETTI",
+    "theme": "face_paint_beauty",
+    "mainScene": "home_discovery",
+    "language": "en-US"
+  },
+  "uiTheme": {
+    "background": "deep_plum",
+    "brandColor": "soft_rose",
+    "glowColor": "cyan_magenta",
+    "cardCorner": 28
+  },
+  "topHeader": {
+    "brandText": "PETTI",
+    "bellVisible": true,
+    "barTone": "dark",
+    "titleFont": "serif_bold"
+  },
+  "categoryTabs": {
+    "active": "ALL",
+    "items": [
+      "ALL",
+      "CUTE",
+      "FESTIVAL",
+      "FANTASY",
+      "GLAM"
+    ],
+    "pillStyle": "rounded_glow"
+  },
+  "heroCard": {
+    "styleId": "renjirenji",
+    "title": "Morpho Dream",
+    "label": "DAILY PICKS",
+    "coverName": "morpho_dream_cover"
+  },
+  "heroCopy": {
+    "headline": "Morpho Dream",
+    "body": "Translucent indigo wings dance across your face.",
+    "tone": "dreamy_magic"
+  },
+  "tryOnButton": {
+    "text": "Try On Now",
+    "icon": "magic_wand",
+    "shape": "wide_capsule",
+    "gradient": [
+      "pink",
+      "blue"
+    ]
+  },
+  "trendSection": {
+    "title": "Trending",
+    "columns": 2,
+    "rowGap": 26,
+    "showHeat": true
+  },
+  "trendItemOne": {
+    "paintId": "paint_cyber_neon_002",
+    "title": "Cyber Neon",
+    "tag": "FANTASY",
+    "level": "MED",
+    "heatText": "2.4k"
+  },
+  "trendItemTwo": {
+    "paintId": "paint_gilded_flora_003",
+    "title": "Gilded Flora",
+    "tag": "GLAM",
+    "level": "EASY",
+    "heatText": "1.8k"
+  },
+  "curatedSection": {
+    "title": "Official Curated",
+    "accentLine": "cyan_pink",
+    "layout": "vertical_cards",
+    "showTryOn": true
+  },
+  "curatedItemOne": {
+    "paintId": "paint_celestial_sparkle_004",
+    "title": "Celestial Sparkle",
+    "shortText": "Hand-crafted crystal patterns for a magical evening.",
+    "level": "HARD"
+  },
+  "curatedItemTwo": {
+    "paintId": "paint_hyper_bloom_005",
+    "title": "Hyper Bloom",
+    "shortText": "Ultra-realistic floral petals for high-fashion portraits.",
+    "level": "MED"
+  },
+  "paintAttributes": {
+    "colors": [
+      "indigo",
+      "cyan",
+      "rose",
+      "gold"
+    ],
+    "finish": "glossy",
+    "coverage": "half_face",
+    "detailLevel": "high"
+  },
+  "faceAreaGuide": {
+    "areas": [
+      "forehead",
+      "eyes",
+      "cheek"
+    ],
+    "avoidAreas": [
+      "mouth",
+      "inner_eye"
+    ],
+    "anchorArea": "eye_outer"
+  },
+  "virtualTryOn": {
+    "enabled": true,
+    "needFacePhoto": true,
+    "resultSize": "portrait",
+    "watermark": false
+  },
+  "aiCreate": {
+    "enabled": true,
+    "entryName": "AI Create",
+    "promptHint": "Describe your dream face paint",
+    "maxResultCount": 4
+  },
+  "photoInput": {
+    "cameraEnabled": true,
+    "albumEnabled": true,
+    "maxPhotoCount": 1,
+    "faceNeed": "single_front_face"
+  },
+  "resultGallery": {
+    "saveEnabled": true,
+    "shareEnabled": true,
+    "maxLocalCount": 200,
+    "folderName": "My Looks"
+  },
+  "styleDetail": {
+    "showColorSet": true,
+    "showFaceArea": true,
+    "showCreator": true,
+    "showRelated": true
+  },
+  "creatorCard": {
+    "creatorName": "Petti Studio",
+    "roleName": "Beauty Curator",
+    "avatarName": "studio_avatar",
+    "worksCount": 128
+  },
+  "favoriteState": {
+    "currentLiked": false,
+    "likeCount": 2400,
+    "saveFolder": "Fantasy Looks",
+    "heartVisible": true
+  },
+  "heatBadge": {
+    "icon": "flame",
+    "position": "top_right",
+    "style": "dark_blur",
+    "textColor": "cyan"
+  },
+  "tagStyle": {
+    "shape": "small_capsule",
+    "borderTone": "pink_glow",
+    "textTone": "pink",
+    "letterCase": "upper"
+  },
+  "homeFeedRules": {
+    "dailyCount": 12,
+    "trendCount": 8,
+    "curatedCount": 6,
+    "sortType": "hot_first"
+  },
+  "bottomTabs": {
+    "active": "HOME",
+    "items": [
+      "HOME",
+      "EXPLORE",
+      "AI CREATE",
+      "PROFILE"
+    ],
+    "barTone": "dark_plum"
+  },
+  "explorePage": {
+    "title": "Explore",
+    "sections": [
+      "Daily",
+      "Cute",
+      "Festival",
+      "Fantasy",
+      "Glam"
+    ],
+    "defaultSection": "Daily"
+  },
+  "profilePage": {
+    "savedLooks": 18,
+    "createdLooks": 7,
+    "likedLooks": 36,
+    "draftLooks": 2
+  },
+  "noticeCenter": {
+    "unreadCount": 2,
+    "dailyPickAlert": true,
+    "newStyleAlert": true,
+    "quietHours": {
+      "enabled": true,
+      "start": "22:00",
+      "end": "08:00"
+    }
+  },
+  "sessionState": {
+    "lastOpenTab": "HOME",
+    "lastCategory": "ALL",
+    "lastViewedPaintId": "paint_morpho_dream_001",
+    "sessionTryCount": 3
+  }
+}
