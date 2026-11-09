@@ -1,179 +1,605 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Petti Terms of Service</title>
-<style>
-:root{
-  --bg:#050611;
-  --panel:rgba(20,21,32,.62);
-  --panel2:rgba(29,30,44,.72);
-  --text:#f8f8fb;
-  --muted:#a5a8b8;
-  --line:rgba(255,255,255,.12);
-  --violet:#8b5cf6;
-  --cyan:#06b6d4;
-  --pink:#ff4fa3;
-  --orange:#ff8a4c;
-}
-*{box-sizing:border-box}
-html,body{min-height:100%}
-body{
-  margin:0;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  color:var(--text);
-  line-height:1.72;
-  background:
-    radial-gradient(ellipse at 22% -4%, rgba(255,138,76,.75) 0%, rgba(255,79,163,.38) 20%, transparent 43%),
-    radial-gradient(ellipse at 82% 0%, rgba(6,182,212,.72) 0%, rgba(139,92,246,.28) 24%, transparent 48%),
-    radial-gradient(ellipse at 50% 102%, rgba(255,79,163,.55) 0%, rgba(139,92,246,.40) 18%, rgba(6,182,212,.32) 32%, transparent 58%),
-    linear-gradient(180deg,#060711 0%, #090a17 45%, #060611 100%);
-  overflow-x:hidden;
-}
-body:before{
-  content:"";
-  position:fixed;
-  inset:0;
-  pointer-events:none;
-  background:
-    radial-gradient(circle at 50% 22%, rgba(255,255,255,.16), transparent 25%),
-    linear-gradient(180deg, rgba(255,255,255,.06), transparent 22%),
-    repeating-linear-gradient(90deg, rgba(255,255,255,.025) 0 1px, transparent 1px 82px);
-  mix-blend-mode:screen;
-  opacity:.78;
-}
-body:after{
-  content:"";
-  position:fixed;
-  right:-110px;
-  top:110px;
-  width:560px;
-  height:560px;
-  pointer-events:none;
-  border-radius:34%;
-  background:
-    linear-gradient(135deg, rgba(255,255,255,.22), transparent 28%),
-    repeating-linear-gradient(0deg, rgba(255,255,255,.20) 0 1px, transparent 1px 8px),
-    repeating-linear-gradient(90deg, rgba(6,182,212,.18) 0 1px, transparent 1px 10px);
-  transform:rotate(32deg) skew(-8deg);
-  opacity:.20;
-  mask-image:radial-gradient(circle, black 0 45%, transparent 73%);
-}
-.container{position:relative;z-index:1;max-width:1120px;margin:0 auto;padding:54px 18px 86px}
-.container:before{content:"";position:absolute;left:50%;top:84px;width:1px;height:120px;background:linear-gradient(180deg, transparent, rgba(255,255,255,.42), transparent);opacity:.5}
-.container:after{content:"✦";position:absolute;left:50%;top:210px;transform:translateX(-50%);color:#fff;font-size:20px;text-shadow:0 0 28px rgba(255,255,255,.9);opacity:.85}
-.card{
-  position:relative;
-  background:linear-gradient(180deg,rgba(255,255,255,.085),rgba(255,255,255,.025)),linear-gradient(135deg,rgba(255,79,163,.08),rgba(6,182,212,.04) 48%,rgba(255,138,76,.07));
-  border:1px solid var(--line);
-  border-radius:28px;
-  padding:32px;
-  margin-bottom:22px;
-  box-shadow:0 28px 90px rgba(0,0,0,.48),inset 0 1px 0 rgba(255,255,255,.13);
-  backdrop-filter:blur(22px) saturate(1.35);
-  -webkit-backdrop-filter:blur(22px) saturate(1.35);
-  overflow:hidden;
-}
-.card:first-child{min-height:260px;display:flex;flex-direction:column;justify-content:center;text-align:center;border-radius:34px}
-.card:first-child:before{content:"";position:absolute;inset:-1px;background:radial-gradient(circle at 20% 15%,rgba(255,138,76,.25),transparent 32%),radial-gradient(circle at 85% 15%,rgba(6,182,212,.25),transparent 34%),linear-gradient(180deg,rgba(255,255,255,.08),transparent 58%);pointer-events:none}
-.card:not(:first-child):before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(255,255,255,.10),transparent 22%,rgba(255,255,255,.035) 70%,transparent);pointer-events:none}
-.card:nth-child(4n+2){transform:translateX(-6px)}
-.card:nth-child(4n+3){transform:translateX(6px)}
-.card>*{position:relative;z-index:1}
-.badge{
-  display:inline-flex;align-items:center;justify-content:center;gap:8px;width:max-content;margin:0 auto;padding:7px 14px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);color:#dce7ff;font-size:12px;letter-spacing:.16em;text-transform:uppercase;
-}
-.badge:before{content:"";width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,var(--cyan),var(--pink));box-shadow:0 0 22px rgba(6,182,212,.95)}
-h1{max-width:900px;margin:18px auto 12px;font-size:clamp(30px,9vw,46px);line-height:.88;letter-spacing:-.075em;color:#fff;text-wrap:balance}
-h2{margin:2px 0 14px;font-size:clamp(20px,6vw,26px);line-height:1;letter-spacing:-.05em;color:#fff}
-h3{margin:20px 0 8px;color:#fff;font-size:18px}
-p,li{color:#e9ecf7;font-size:15.5px}
-.card:first-child p{max-width:760px;margin-left:auto;margin-right:auto;color:#d9ddec}
-.meta{color:var(--muted);font-size:13px;letter-spacing:.02em}
-ul{padding-left:22px;margin:10px 0 0}
-li{margin:8px 0}
-.note{max-width:800px;margin:20px auto 0;padding:16px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.07);color:#f6f7fb;box-shadow:inset 0 1px 0 rgba(255,255,255,.1)}
-a{color:#7dd3fc}
-@media(max-width:680px){
-  .container{padding:32px 12px 56px}
-  .card{padding:18px;border-radius:20px}
-  .card:first-child{min-height:260px;border-radius:26px}
-  h1{font-size:clamp(28px,9vw,42px)}
-  h2{font-size:22px}
-  p,li{font-size:14.5px;}
-  .note{border-radius:18px}
-  .card:nth-child(4n+2),.card:nth-child(4n+3){transform:none}
-}
-</style>
-</head><body><div class="container">
-<div class="card"><div class="badge">Petti Legal</div><h1>Terms of Service</h1><div class="meta">Last updated: June 4, 2026 · Contact: <a href="mailto:support@petti.online">support@petti.online</a></div>
-<p>Petti is a creative face painting platform that provides official face paint inspiration, community artwork discovery, AI-assisted face paint synthesis, and consumable digital items.</p>
-<div class="note">By using Petti, uploading photos, generating AI face paint effects, publishing artwork, interacting with the community, or purchasing consumable items, you agree to these Terms.</div></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Petti - Terms of Service</title>
+  <meta name="description" content="Official Terms of Service for Petti - Face Paint Art, AI Synthesis & Creative Community.">
+  <style>
+    :root {
+      --bg: #050611;
+      --card-bg: rgba(20, 21, 35, 0.72);
+      --card-border: rgba(255, 255, 255, 0.12);
+      --text: #f8f8fb;
+      --text-muted: #9fa4bc;
+      --accent-cyan: #06b6d4;
+      --accent-pink: #ff4fa3;
+      --accent-orange: #ff8a4c;
+      --accent-violet: #8b5cf6;
+      --highlight-bg: rgba(255, 255, 255, 0.06);
+      --link-color: #38bdf8;
+    }
 
-<div class="card"><h2>1. Eligibility and Acceptance</h2>
-<p>You must be at least 18 years old to use Petti. By accessing or using the Service, you represent that you meet this requirement and have the legal capacity to enter into these Terms.</p>
-<p>If you use Petti on behalf of a studio, brand, creator group, agency, event team, or other organization, you represent that you have authority to accept these Terms on behalf of that organization.</p>
-<p>We may refuse registration, restrict access, suspend accounts, or request additional information where we reasonably believe that a user does not meet eligibility requirements or creates legal, safety, operational, or platform compliance risk.</p></div>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-<div class="card"><h2>2. Description of the Service</h2>
-<p>Petti may provide official face painting recommendations, themed face paint collections, user artwork feeds, community posts, comments, likes, reports, AI-assisted face paint synthesis, saved looks, consumable in-app purchases, and related creative tools.</p>
-<p>The Service is intended for artistic inspiration, entertainment, visual experimentation, festival makeup ideas, cosplay inspiration, theatrical face paint previews, and creative community sharing. Petti does not provide medical advice, dermatology advice, cosmetic safety guarantees, or professional makeup certification.</p>
-<p>Face painting results may vary depending on photo quality, lighting, face angle, selected design, skin tone, image resolution, AI processing quality, and user expectations. AI-generated previews are visual references only and do not guarantee real-world makeup outcomes.</p></div>
+    html, body {
+      min-height: 100%;
+    }
 
-<div class="card"><h2>3. AI Face Paint Synthesis</h2>
-<h3>3.1 Purpose of AI features</h3>
-<p>Petti’s AI feature is designed to help users visualize decorative face paint patterns, colors, masks, symbols, festival looks, fantasy designs, cosplay styles, and creative makeup elements on a user-provided face photo.</p>
-<h3>3.2 Self-trained and business-specific model</h3>
-<p>The AI model used in Petti is built, managed, and trained by us according to our own face painting and creative makeup scenarios. The model is optimized for artistic face paint synthesis and decorative image transformation, not for identity recognition or biometric analysis.</p>
-<p>Our AI workflow is based on internally managed creative datasets, face paint style structures, color placement rules, mask-design patterns, safety filters, and service-specific image synthesis requirements. We manage the model to keep it focused on face painting generation rather than unrelated or uncontrolled use cases.</p>
-<h3>3.3 No biometric identity use</h3>
-<p>Petti does not use uploaded face photos for identity verification, face recognition, biometric identification, surveillance, authentication, law enforcement profiling, or sensitive attribute inference. We do not create facial biometric templates, faceprints, identity databases, or long-term biometric profiles from uploaded photos.</p>
-<h3>3.4 User responsibility</h3>
-<p>You should only upload photos that you own or have permission to use. You should not upload another person’s face without consent, and you should not submit confidential, sensitive, or unlawful content into AI features.</p></div>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      line-height: 1.75;
+      background:
+        radial-gradient(ellipse at 20% -4%, rgba(255, 138, 76, 0.55) 0%, rgba(255, 79, 163, 0.30) 22%, transparent 45%),
+        radial-gradient(ellipse at 85% 0%, rgba(6, 182, 212, 0.55) 0%, rgba(139, 92, 246, 0.25) 25%, transparent 50%),
+        radial-gradient(ellipse at 50% 102%, rgba(255, 79, 163, 0.45) 0%, rgba(139, 92, 246, 0.35) 20%, rgba(6, 182, 212, 0.25) 35%, transparent 60%),
+        linear-gradient(180deg, #060711 0%, #090a18 45%, #050611 100%);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
 
-<div class="card"><h2>4. Consumable In-App Purchases</h2>
-<p>Petti may offer consumable digital items, such as credits, generation tokens, creative packs, premium render attempts, design unlocks, or other one-time-use digital benefits. These items are consumed when used and generally cannot be restored once spent.</p>
-<p>Petti does not offer auto-renewable subscriptions. Consumable purchases are non-recurring and do not automatically renew.</p>
-<p>If purchases are made through Apple’s App Store, Apple processes the payment under Apple’s terms, payment rules, and refund process. Petti does not receive your full payment card information and does not control Apple’s billing system.</p>
-<p>Consumable digital items have no cash value, are not legal tender, are not bank deposits, do not represent property ownership, and may not be exchanged, transferred, refunded, or redeemed for money except where required by law or platform rules.</p></div>
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.12), transparent 25%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.05), transparent 20%),
+        repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.02) 0 1px, transparent 1px 80px);
+      mix-blend-mode: screen;
+      opacity: 0.8;
+      z-index: 0;
+    }
 
-<div class="card"><h2>5. User-Generated Content</h2>
-<p>The Service may allow you to upload or share photos, AI-generated artwork, face paint designs, captions, comments, profile information, reports, feedback, and other materials (“User Content”). You retain ownership of your User Content, subject to the license below.</p>
-<p>To operate, display, secure, improve, and promote the Service, you grant Petti a worldwide, non-exclusive, royalty-free, sublicensable, and transferable license to host, store, reproduce, display, publish, distribute, modify for technical formatting, adapt, and otherwise use your User Content solely in connection with providing, maintaining, improving, moderating, and promoting the Service.</p>
-<p>You represent that you own or have all rights, permissions, and consents necessary to upload and share your User Content, including rights relating to face photos, models, photographers, makeup artists, logos, costumes, copyrighted designs, and personal information contained in the content.</p></div>
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 56px 20px 96px;
+    }
 
-<div class="card"><h2>6. Community Rules</h2>
-<p>You agree to use Petti lawfully, respectfully, and safely. Petti is intended to be a creative visual community, and users must not misuse the platform or harm other users.</p>
-<ul>
-<li>No illegal, hateful, violent, abusive, harassing, defamatory, exploitative, misleading, or threatening content.</li>
-<li>No sexually explicit, pornographic, exploitative, or non-consensual intimate content.</li>
-<li>No impersonation of another person, creator, artist, brand, organization, or Petti representative.</li>
-<li>No sharing another person’s private information without permission.</li>
-<li>No scams, phishing, spam, fake engagement, purchase manipulation, or deceptive promotions.</li>
-<li>No malware, bots, scraping, unauthorized automation, reverse engineering, or attempts to interfere with the Service.</li>
-</ul>
-<p>We may remove content, restrict visibility, suspend accounts, limit AI features, restrict purchases, or terminate accounts where necessary for safety, legal compliance, platform integrity, or App Store compliance.</p></div>
+    .card {
+      position: relative;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 36px 40px;
+      margin-bottom: 24px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(20px) saturate(1.3);
+      -webkit-backdrop-filter: blur(20px) saturate(1.3);
+      overflow: hidden;
+    }
 
-<div class="card"><h2>7. Intellectual Property</h2>
-<p>Petti and its licensors own the Service, including software, interface designs, layouts, graphics, text, logos, trademarks, AI workflows, datasets, model configurations, recommendation systems, and related materials.</p>
-<p>Users must only upload content they own or are authorized to share. Unauthorized use of copyrighted artwork, makeup designs, celebrity photos, brand logos, festival graphics, images, or third-party materials may result in removal or enforcement action.</p>
-<p>Nothing in these Terms grants you ownership of Petti’s intellectual property. You may use the Service only as permitted by these Terms and applicable law.</p></div>
+    .card-hero {
+      text-align: center;
+      padding: 48px 32px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%), var(--card-bg);
+      border-radius: 32px;
+    }
 
-<div class="card"><h2>8. Reporting, Moderation, and Enforcement</h2>
-<p>Petti may provide reporting, blocking, moderation, and safety tools. Users are encouraged to report harmful content, privacy violations, copyright infringement, AI misuse, impersonation, harassment, scams, or unsafe behavior.</p>
-<p>Moderation actions may include warnings, content removal, reduced visibility, AI generation restrictions, purchase restrictions, temporary suspensions, permanent bans, or preservation of moderation records for legal and safety purposes.</p>
-<p>We may preserve account information, device identifiers, logs, reports, AI generation records, purchase records, and moderation decisions where necessary to investigate abuse, prevent repeat violations, comply with law, or protect users.</p></div>
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #e2e8f0;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
 
-<div class="card"><h2>9. Disclaimers</h2>
-<p>The Service is provided on an “AS IS” and “AS AVAILABLE” basis. To the maximum extent permitted by law, Petti disclaims all warranties, express or implied, including warranties of merchantability, fitness for a particular purpose, title, non-infringement, availability, accuracy, reliability, and uninterrupted operation.</p>
-<p>Petti does not guarantee that AI-generated face paint images will be accurate, realistic, symmetrical, suitable, safe for real-world application, or consistent with user expectations. Any real-world cosmetic use should be evaluated carefully, especially if you have allergies, sensitive skin, eye-area concerns, or skin conditions.</p></div>
+    .badge::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-pink));
+      box-shadow: 0 0 12px var(--accent-cyan);
+    }
 
-<div class="card"><h2>10. Limitation of Liability</h2>
-<p>To the maximum extent permitted by law, Petti and its affiliates, officers, employees, licensors, service providers, and partners will not be liable for indirect, incidental, special, consequential, exemplary, or punitive damages, including loss of profits, data, content, business opportunities, reputation, or emotional distress, arising from your use of or inability to use the Service.</p>
-<p>To the maximum extent permitted by law, Petti’s total liability for all claims relating to the Service will not exceed the greater of: (a) the amount you paid to Petti during the 12 months before the event giving rise to the claim; or (b) USD $100.</p></div>
+    h1 {
+      font-size: clamp(32px, 6vw, 48px);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.04em;
+      color: #ffffff;
+      margin-bottom: 14px;
+    }
 
-<div class="card"><h2>11. Termination</h2>
-<p>You may stop using the Service at any time. We may suspend, restrict, or terminate your account, content, purchases, or access if we reasonably believe you violated these Terms, created a safety risk, infringed rights, misused AI features, manipulated purchases, or caused legal, technical, reputational, or operational risk.</p>
-<p>Some information may remain in backups, moderation systems, purchase records, or legal records for limited periods after termination where necessary for legal, operational, safety, security, or fraud-prevention purposes.</p></div>
+    h2 {
+      font-size: clamp(20px, 4vw, 26px);
+      font-weight: 700;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
 
-<div class="card"><h2>12. Contact</h2>
-<p>If you have questions about these Terms, AI features, purchases, community rules, reporting, or enforcement actions, contact us at <a href="mailto:support@petti.online">support@petti.online</a>.</p></div>
-</div></body></html>
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 22px;
+      background: linear-gradient(180deg, var(--accent-cyan), var(--accent-pink));
+      border-radius: 2px;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #f1f5f9;
+      margin: 22px 0 10px;
+    }
+
+    p {
+      color: #e2e8f0;
+      font-size: 15.5px;
+      margin-bottom: 14px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .meta {
+      color: var(--text-muted);
+      font-size: 13.5px;
+      margin-bottom: 20px;
+    }
+
+    .hero-intro {
+      max-width: 820px;
+      margin: 0 auto 20px;
+      color: #cbd5e1;
+      font-size: 16.5px;
+    }
+
+    .note-box {
+      max-width: 840px;
+      margin: 24px auto 0;
+      padding: 16px 22px;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: rgba(255, 255, 255, 0.05);
+      color: #f8fafc;
+      font-size: 14.5px;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+      text-align: left;
+    }
+
+    .notice-card {
+      background: linear-gradient(135deg, rgba(6, 182, 212, 0.12) 0%, rgba(139, 92, 246, 0.08) 50%, rgba(255, 79, 163, 0.08) 100%);
+      border: 1px solid rgba(6, 182, 212, 0.35);
+    }
+
+    .notice-card h2::before {
+      background: linear-gradient(180deg, var(--accent-cyan), var(--accent-violet));
+    }
+
+    ul, ol {
+      padding-left: 22px;
+      margin: 12px 0 16px;
+    }
+
+    li {
+      color: #e2e8f0;
+      font-size: 15px;
+      margin: 8px 0;
+    }
+
+    a {
+      color: var(--link-color);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #7dd3fc;
+    }
+
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14.5px;
+    }
+
+    .info-table th, .info-table td {
+      padding: 12px 16px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      text-align: left;
+    }
+
+    .info-table th {
+      background: rgba(255, 255, 255, 0.08);
+      color: #ffffff;
+      font-weight: 600;
+      width: 28%;
+    }
+
+    .info-table td {
+      background: rgba(255, 255, 255, 0.03);
+      color: #e2e8f0;
+    }
+
+    .highlight-pill {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 999px;
+      background: rgba(6, 182, 212, 0.16);
+      color: #67e8f9;
+      font-size: 13px;
+      font-weight: 600;
+      margin-right: 6px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 32px 0 12px;
+      color: var(--text-muted);
+      font-size: 13.5px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 32px 14px 64px;
+      }
+      .card {
+        padding: 24px 20px;
+        border-radius: 20px;
+      }
+      .card-hero {
+        padding: 36px 18px;
+      }
+      h1 {
+        font-size: 32px;
+      }
+      h2 {
+        font-size: 21px;
+      }
+      p, li {
+        font-size: 14.5px;
+      }
+      .info-table th, .info-table td {
+        padding: 10px 12px;
+        font-size: 13.5px;
+      }
+      .info-table th {
+        width: 36%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header / Hero Section -->
+    <div class="card card-hero">
+      <div class="badge">Legal Documentation</div>
+      <h1>Terms of Service</h1>
+      <div class="meta">
+        Effective Date: November 9, 2026 &nbsp;·&nbsp; Official Website: <a href="https://www.petti.online" target="_blank" rel="noopener noreferrer">https://www.petti.online</a> &nbsp;·&nbsp; Support: <a href="mailto:support@petti.online">support@petti.online</a>
+      </div>
+      <p class="hero-intro">
+        Welcome to <strong>Petti</strong>! Petti is an innovative mobile creative platform dedicated to face paint art inspiration, AI-assisted face paint synthesis, community artwork showcase, and consumable digital entertainment items.
+      </p>
+      <div class="note-box">
+        <strong>Important Notice:</strong> By installing, accessing, or using Petti, uploading photos, generating AI face paint visuals, interacting with our community, or purchasing consumable virtual items, you agree to be bound by these Terms of Service. If you do not agree to these Terms, please do not use the Service.
+      </div>
+    </div>
+
+    <!-- Section 1: Trader Identification & Operator Information -->
+    <div class="card notice-card">
+      <h2>1. Trader Identification &amp; Operator Information</h2>
+      <p>
+        In accordance with the <strong>European Union Digital Services Act (DSA, Regulation (EU) 2022/2065)</strong>, the <strong>EU Consumer Rights Directive (Directive 2011/83/EU)</strong>, the <strong>UK Consumer Rights Act 2015</strong>, and Google Play policies regarding Trader Status disclosure, the operating entity and trader information for Petti is declared as follows:
+      </p>
+      <table class="info-table">
+        <tbody>
+          <tr>
+            <th>Application Name</th>
+            <td>Petti (Package Name: <code>com.taotao.petti</code>)</td>
+          </tr>
+          <tr>
+            <th>Platform Developer / Trader</th>
+            <td>Petti Operations Team</td>
+          </tr>
+          <tr>
+            <th>Trader Status</th>
+            <td>Registered and declared as a Commercial Trader for digital content and in-app purchases on Google Play</td>
+          </tr>
+          <tr>
+            <th>Official Website</th>
+            <td><a href="https://www.petti.online" target="_blank" rel="noopener noreferrer">https://www.petti.online</a></td>
+          </tr>
+          <tr>
+            <th>Customer Support &amp; Legal Inquiries</th>
+            <td><a href="mailto:support@petti.online">support@petti.online</a> (Inquiries are typically answered within 24–48 business hours)</td>
+          </tr>
+          <tr>
+            <th>Applicable Store Platform</th>
+            <td>Google Play Store (Google LLC) and authorized distribution channels</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        If you reside in the European Economic Area (EEA) or the United Kingdom (UK), your statutory rights as a consumer are acknowledged and respected as detailed in Section 6 of these Terms.
+      </p>
+    </div>
+
+    <!-- Section 2: Eligibility and Account -->
+    <div class="card">
+      <h2>2. Eligibility and Acceptance</h2>
+      <p>
+        <strong>2.1 Age Requirement:</strong> You must be at least 18 years of age (or the legal age of majority in your jurisdiction) to use Petti. By downloading, accessing, or using the Service, you represent and warrant that you possess the legal capacity to enter into a binding agreement with us.
+      </p>
+      <p>
+        <strong>2.2 Organizational Use:</strong> If you use Petti on behalf of a company, makeup studio, brand, creator group, or other legal entity, you represent and warrant that you are authorized to bind that entity to these Terms.
+      </p>
+      <p>
+        <strong>2.3 Account Security:</strong> You are responsible for safeguarding your login credentials and device security. Any activity occurring under your account or on your registered device is your responsibility. You agree to notify us immediately at <a href="mailto:support@petti.online">support@petti.online</a> upon discovering any unauthorized use or security breach.
+      </p>
+    </div>
+
+    <!-- Section 3: Description of the Service -->
+    <div class="card">
+      <h2>3. Description of the Service</h2>
+      <p>
+        Petti provides an engaging creative platform featuring:
+      </p>
+      <ul>
+        <li>Curated official face paint themes, difficulty classifications, and design inspiration;</li>
+        <li>Artistic Fusion and AI-assisted face paint preview synthesis;</li>
+        <li>Community exploration feed, artwork sharing, likes, and feedback channels;</li>
+        <li>Consumable virtual items (Coins and generation credits) for unlocking digital tools and visual rendering styles.</li>
+      </ul>
+      <p>
+        <strong>Artistic &amp; Entertainment Purpose:</strong> The Service is created strictly for artistic visualization, entertainment, festival makeup ideas, cosplay inspiration, and community creativity. Petti <strong>does not</strong> provide medical advice, dermatological consultations, cosmetic formulation certifications, or safety guarantees for real-life chemical pigments.
+      </p>
+      <p>
+        <strong>Rendering Variability:</strong> AI-generated previews depend upon user photo lighting, facial angle, skin tone, resolution, and algorithmic variations. Generated images are creative simulations for reference only and do not guarantee physical makeup results in real-world application.
+      </p>
+    </div>
+
+    <!-- Section 4: AI Face Paint Synthesis & Biometric Disclaimer -->
+    <div class="card">
+      <h2>4. AI Face Paint Synthesis &amp; Biometric Privacy</h2>
+      <h3>4.1 Purpose of AI Face Paint Features</h3>
+      <p>
+        Petti’s AI synthesis feature is designed solely to superimpose decorative face paint patterns, colors, masks, theatrical themes, and cosplay aesthetics onto user-submitted portraits for visual preview.
+      </p>
+
+      <h3>4.2 Dedicated Creative Model</h3>
+      <p>
+        Our AI processing pipeline is specifically trained and tailored for artistic makeup synthesis, color placement, and mask composition. It is optimized exclusively for graphic transformation and artistic stylization.
+      </p>
+
+      <h3>4.3 Strict No-Biometric Identity Guarantee</h3>
+      <p>
+        <span class="highlight-pill">Data Protection</span> <strong>Petti does NOT use uploaded face photos for facial recognition, identity verification, biometric surveillance, profiling, or categorization.</strong> We do not extract or retain permanent biometric identifiers, face templates, or geometric biometric records. Uploaded face images are processed strictly for the requested artistic transformation in compliance with Google Play Sensitive Data policies.
+      </p>
+
+      <h3>4.4 User Image Rights and Authorizations</h3>
+      <p>
+        You must only submit photos of yourself or individuals who have explicitly given you informed consent to use their likeness. You must never upload non-consensual images, photos of minors, or unlawful imagery.
+      </p>
+    </div>
+
+    <!-- Section 5: In-App Purchases, Billing, and Virtual Items -->
+    <div class="card">
+      <h2>5. In-App Purchases, Billing &amp; Virtual Items</h2>
+      <h3>5.1 Consumable Virtual Items</h3>
+      <p>
+        Petti offers consumable virtual items, including <strong>Petti Coins</strong>, AI synthesis credits, creative packs, and single-use digital benefits ("Virtual Items"). Virtual Items are consumed upon use and cannot be restored once spent.
+      </p>
+
+      <h3>5.2 No Auto-Renewable Subscriptions</h3>
+      <p>
+        Petti does not operate continuous auto-renewable subscriptions. All in-app purchases are one-time, non-recurring transactions for specific digital packages selected by the user.
+      </p>
+
+      <h3>5.3 Google Play In-App Billing Processing</h3>
+      <p>
+        When you purchase Virtual Items on the Android version of Petti, transactions are processed directly by <strong>Google Play In-App Billing (Google LLC / Google Payments)</strong>:
+      </p>
+      <ul>
+        <li>Payments are charged to your Google Play account upon purchase confirmation under the <a href="https://play.google.com/intl/en_us/about/play-terms/" target="_blank" rel="noopener noreferrer">Google Play Terms of Service</a>.</li>
+        <li>Petti does not collect, receive, or store your payment card numbers, bank account credentials, or direct financial billing information.</li>
+        <li>Price points, local currency conversions, and applicable sales taxes/VAT are determined and collected via Google Play in accordance with regional regulations.</li>
+      </ul>
+
+      <h3>5.4 Nature of Virtual Items</h3>
+      <p>
+        Virtual Items are digital entertainment licenses and have no monetary value outside the Petti application. Virtual Items do not constitute real property, cannot be transferred or sold to any third party, and are non-refundable except where mandated by applicable consumer protection laws or Google Play refund policies.
+      </p>
+    </div>
+
+    <!-- Section 6: EEA & UK Consumer Protection (Trader Status Disclosures) -->
+    <div class="card notice-card">
+      <h2>6. European Economic Area (EEA) &amp; UK Consumer Rights</h2>
+      <p>
+        If you are a consumer residing in the European Economic Area (EEA) or the United Kingdom (UK), the following provisions apply to your use of Petti under EU and UK consumer protection directives:
+      </p>
+
+      <h3>6.1 Statutory Right of Withdrawal &amp; Digital Content Exception</h3>
+      <p>
+        <strong>General 14-Day Right:</strong> Under EU Directive 2011/83/EU and UK Consumer Rights laws, consumers generally have a period of 14 days to withdraw from a distance contract without giving any reason.
+      </p>
+      <p>
+        <strong>Legal Exception for Consumable Digital Items:</strong> Pursuant to Article 16(m) of EU Directive 2011/83/EU, the statutory right of withdrawal <strong>ceases to apply</strong> to contracts for the supply of digital content which is not supplied on a tangible medium when:
+      </p>
+      <ol>
+        <li>The performance has begun with your prior express consent; and</li>
+        <li>You have acknowledged that you will lose your right of withdrawal once the digital content is made available to you.</li>
+      </ol>
+      <div class="note-box">
+        <strong>Withdrawal Waiver Acknowledgment:</strong> When you purchase consumable items (such as Coins or generation credits) in Petti via Google Play, you expressly request and agree to immediate delivery. You acknowledge that once the Virtual Items are credited to your account, delivery is instantaneous, and you waive your statutory 14-day right of withdrawal for that purchase.
+      </div>
+
+      <h3>6.2 Google Play Refund Mechanism</h3>
+      <p>
+        If an unauthorized transaction occurs, if a technical error prevents digital content from being delivered, or if you believe you qualify for a refund under Google Play’s consumer standards, you may request a refund directly through the <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener noreferrer">Google Play Refund Portal</a>. You may also contact our support team at <a href="mailto:support@petti.online">support@petti.online</a> for order verification assistance.
+      </p>
+
+      <h3>6.3 Legal Guarantee of Conformity</h3>
+      <p>
+        Under EU Directive 2019/770 on contracts for the supply of digital content and digital services, consumers in the EEA benefit from a statutory legal guarantee that the digital services and content supplied conform to the agreed contract. If a digital service lacks conformity, you are entitled to have it brought into conformity within a reasonable time free of charge, or to a proportional price reduction or contract termination under applicable statutory conditions.
+      </p>
+
+      <h3>6.4 Alternative Dispute Resolution (ADR) &amp; ODR Platform</h3>
+      <p>
+        The European Commission provides an online platform for alternative dispute resolution (ODR) accessible at: <br>
+        <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr</a>.<br>
+        We are committed to resolving any consumer concerns in good faith. Please contact us first at <a href="mailto:support@petti.online">support@petti.online</a> so we can address your issue swiftly.
+      </p>
+    </div>
+
+    <!-- Section 7: User-Generated Content -->
+    <div class="card">
+      <h2>7. User-Generated Content (UGC) &amp; Licenses</h2>
+      <p>
+        <strong>7.1 Ownership:</strong> You retain all intellectual property rights in the original photos, captions, feedback, and artwork you create or submit to Petti ("User Content").
+      </p>
+      <p>
+        <strong>7.2 License to Petti:</strong> To operate, distribute, format, and display your published artwork within the community feed, you grant Petti a worldwide, non-exclusive, royalty-free, transferable license to host, cache, display, and technically format your published User Content solely for the purpose of operating, maintaining, and enhancing the Service.
+      </p>
+      <p>
+        <strong>7.3 Your Representations:</strong> You represent that you own or have procured all required permissions, releases, and licenses for any content you share on Petti, and that your content does not infringe upon any third party’s copyright, trademark, privacy, or moral rights.
+      </p>
+    </div>
+
+    <!-- Section 8: Community Rules & Acceptable Use -->
+    <div class="card">
+      <h2>8. Community Rules &amp; Acceptable Use</h2>
+      <p>
+        To ensure a safe, creative, and inspiring environment for all creators, you agree not to engage in any prohibited activities:
+      </p>
+      <ul>
+        <li><strong>No Harmful or Unlawful Content:</strong> Do not post hate speech, violence, harassment, defamation, threats, or sexually explicit/nude content.</li>
+        <li><strong>No Non-Consensual Imagery:</strong> Do not post or synthesize photos of another person without their documented consent.</li>
+        <li><strong>No Impersonation:</strong> Do not impersonate any person, brand, artist, or representative of Petti.</li>
+        <li><strong>No System Abuse:</strong> Do not use automated bots, scrapers, data-mining tools, decompilers, or attempt to reverse-engineer our proprietary models, code, or APIs.</li>
+        <li><strong>No Payment Manipulation:</strong> Do not attempt fraudulent transactions, chargeback abuse, or exploitation of billing loopholes.</li>
+      </ul>
+    </div>
+
+    <!-- Section 9: Moderation, Reporting, and Termination -->
+    <div class="card">
+      <h2>9. Moderation, In-App Reporting &amp; Termination</h2>
+      <p>
+        <strong>9.1 In-App Reporting System:</strong> Petti incorporates an in-app reporting and blocking tool. If you encounter content or conduct that violates these Terms, please submit a report directly through the app’s reporting interface or email <a href="mailto:support@petti.online">support@petti.online</a>.
+      </p>
+      <p>
+        <strong>9.2 Enforcement Measures:</strong> We reserve the right to review, flag, hide, or remove User Content, and to suspend, restrict, or terminate user accounts that violate these Terms, breach platform guidelines, or pose safety/legal risks.
+      </p>
+      <p>
+        <strong>9.3 Voluntary Account Deletion:</strong> You may stop using Petti or request the deletion of your account and personal data at any time through the in-app settings or by contacting <a href="mailto:support@petti.online">support@petti.online</a>.
+      </p>
+    </div>
+
+    <!-- Section 10: Intellectual Property -->
+    <div class="card">
+      <h2>10. Intellectual Property Rights</h2>
+      <p>
+        All software, algorithms, UI designs, brand logos, graphics, icons, sound effects, face paint asset libraries, recommendation engines, and proprietary AI workflows belonging to Petti are protected by copyright, trademark, and trade secret laws. Nothing in these Terms transfers any proprietary right in Petti’s intellectual property to you.
+      </p>
+    </div>
+
+    <!-- Section 11: Disclaimers & Safety Notice -->
+    <div class="card">
+      <h2>11. Disclaimers &amp; Cosmetic Safety Notice</h2>
+      <p>
+        <strong>11.1 "As-Is" Service:</strong> Petti is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind, whether express or implied, including merchantability, fitness for a particular purpose, or uninterrupted availability.
+      </p>
+      <p>
+        <strong>11.2 Real-Life Makeup Safety Warning:</strong> Petti’s AI face paints are computer-generated simulations. Before applying actual cosmetics or face paints to your or another person's skin:
+      </p>
+      <ul>
+        <li>Always perform a patch test to identify potential allergic reactions;</li>
+        <li>Use cosmetics compliant with local cosmetic safety standards (such as FDA or EU Cosmetics Regulation 1223/2009);</li>
+        <li>Keep cosmetics away from eyes, open wounds, and mucous membranes.</li>
+      </ul>
+    </div>
+
+    <!-- Section 12: Limitation of Liability -->
+    <div class="card">
+      <h2>12. Limitation of Liability</h2>
+      <p>
+        To the fullest extent permissible under applicable law, Petti, its operators, affiliates, agents, and licensors shall not be liable for any indirect, incidental, punitive, special, or consequential damages resulting from your use of or inability to use the Service.
+      </p>
+      <p>
+        In all cases, our total aggregate liability for claims arising out of or relating to these Terms or the Service shall not exceed the greater of: (a) the total amount paid by you to Petti via Google Play in the preceding 12 months; or (b) fifty United States Dollars (USD $50.00), or local statutory equivalents.
+      </p>
+      <p>
+        <em>Note for Consumers:</em> Nothing in these Terms excludes or limits our liability for death or personal injury caused by gross negligence, fraud, or statutory non-excludable consumer warranties under mandatory local laws.
+      </p>
+    </div>
+
+    <!-- Section 13: Governing Law & Jurisdiction -->
+    <div class="card">
+      <h2>13. Governing Law &amp; Jurisdiction</h2>
+      <p>
+        These Terms shall be governed by and construed in accordance with the laws of the jurisdiction where the operating team is established, without regard to conflict of law principles. If you reside in the European Union or the United Kingdom as a consumer, you also enjoy the mandatory protection afforded by the laws of your country of habitual residence.
+      </p>
+    </div>
+
+    <!-- Section 14: Modifications to Terms -->
+    <div class="card">
+      <h2>14. Modifications to these Terms</h2>
+      <p>
+        We may update these Terms periodically to reflect changes in our features, platform guidelines, legal standards, or store compliance requirements. Material changes will be indicated by updating the "Effective Date" at the top of this document. Continued use of Petti after changes take effect signifies your acceptance of the updated Terms.
+      </p>
+    </div>
+
+    <!-- Section 15: Contact Us -->
+    <div class="card">
+      <h2>15. Contact Us</h2>
+      <p>
+        If you have questions, comments, or legal inquiries concerning these Terms of Service, consumer rights, or Google Play purchases, please contact our support team:
+      </p>
+      <table class="info-table">
+        <tbody>
+          <tr>
+            <th>Official Support Email</th>
+            <td><a href="mailto:support@petti.online">support@petti.online</a></td>
+          </tr>
+          <tr>
+            <th>Legal &amp; Privacy Contact</th>
+            <td><a href="mailto:support@petti.online">support@petti.online</a></td>
+          </tr>
+          <tr>
+            <th>Website</th>
+            <td><a href="https://www.petti.online" target="_blank" rel="noopener noreferrer">https://www.petti.online</a></td>
+          </tr>
+          <tr>
+            <th>Terms URL</th>
+            <td><a href="https://www.petti.online/terms.html" target="_blank" rel="noopener noreferrer">https://www.petti.online/terms.html</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>&copy; 2026 Petti. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
